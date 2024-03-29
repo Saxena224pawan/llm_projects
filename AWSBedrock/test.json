@@ -1,0 +1,21 @@
+[{
+    "modelId": "meta.llama2-70b-chat-v1",
+    "contentType": "application/json",
+    "accept": "application/json",
+    "body": "{\"prompt\":\"[INST]You are a a very intelligent bot with exceptional critical thinking[/INST]\\nI went to the market and bought 10 apples. I gave 2 apples to your friend and 2 to the helper. I then went and bought 5 more apples and ate 1. How many apples did I remain with?\\n\\nLet's think step by step.\",\"max_gen_len\":512,\"temperature\":0.5,\"top_p\":0.9}"
+}
+
+,
+{
+    "modelId": "anthropic.claude-v2",
+    "contentType": "application/json",
+    "accept": "application/json",
+    "body": "{\"prompt\":\"\\n\\nHuman: Write a short and high-quality python script for the following task, something a very skilled python expert would write. You are writing code for an experienced developer so only add comments for things that are non-obvious. Make sure to include any imports required. \\n\\nNEVER write anything before the ```python``` block. After you are done generating the code and after the ```python``` block, check your work carefully to make sure there are no mistakes, errors, or inconsistencies. If there are errors, list those errors in <error> tags, then generate a new version with those errors fixed. If there are no errors, write \\\"CHECKED: NO ERRORS\\\" in <error> tags.\\n\\nHere is the task:\\n<task>\\nA web scraper that extracts data from multiple pages and stores results in a SQLite database. Double check your work to ensure no errors or inconsistencies.\\n</task>\\n\\nAssistant:\\n\",\"max_tokens_to_sample\":2048,\"temperature\":0,\"top_k\":250,\"top_p\":1,\"stop_sequences\":[\"\\n\\nHuman:\"],\"anthropic_version\":\"bedrock-2023-05-31\"}"
+},
+{
+    "modelId": "stability.stable-diffusion-xl-v0",
+    "contentType": "application/json",
+    "accept": "application/json",
+    "body": "{\"text_prompts\":[{\"text\":\"Sri lanka tea plantation.\",\"weight\":1}],\"cfg_scale\":10,\"seed\":0,\"steps\":50,\"width\":512,\"height\":512}"
+  }
+]
